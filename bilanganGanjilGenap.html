@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilangan Genap Ganjil</title>
+</head>
+<body>
+  <script>
+    // variabel bilangan dengan value 21
+    // keyword let/const
+    // keyword nama Variabel = value;
+    // input
+    let bilangan = 21;
+    // proses
+    if(bilangan % 2 == 0) {
+        hasil = "bilangan genap"
+    } else {
+        hasil = "bilangan ganjil"
+    }
+    // output
+    console.log(hasil)
+    
+
+    // squence
+    // 1. luas segitiga
+    let alas = 12;
+    let tinggi = 15;
+
+    let Hasil = 1/2 * alas * tinggi
+
+    console.log(Hasil)
+
+    // 2. keliling lingkaran
+    let phi = 3.14;
+    let r = 10;
+
+    let jumlah = Math.round(phi * r * 2)
+
+    console.log(jumlah)
+
+    // 3. luas persegi panjang
+    let panjang = 40;
+    let lebar = 25;
+
+    let Jumlah = panjang * lebar
+
+    console.log(Jumlah)
+
+    // 4. menentukan umur
+    let tahunsekarang = 2023;
+    let tahunlahir= 2007;
+
+    let umur = tahunsekarang - tahunlahir
+
+    console.log(`umur saya adalah ${umur} tahun`)
+
+    // selection atau percabangan
+    // NO 1
+    let a = 1;
+    let b = 2;
+    let c = 3;
+    
+    if (a>b && a>c) {
+        console.log("bilangan satu paling besar")
+    } else if (b>a && b>c) {
+        console.log("bilangan dua paling besar")
+    } else if (c>a && c>b) {
+        console.log("bilangan tiga paling besar")
+    }
+
+    // NO 2
+    let angka = 0;
+
+    if (angka >= 0) {
+        hasil1 = "Positif"
+    } else {
+        hasil1 = "Negatif"
+    }
+
+    if (angka %2 == 0) {
+        hasil2 = "Genap"
+    } else {
+        hasil2 = "Ganjil"
+    }
+
+    console.log(`Hasilnya adalah bilangan ${hasil1} dan bilangan ${hasil2}`)
+
+    // NO 3
+    let saklar = 0;
+
+    if (saklar == 0) {
+        akhir = "Lampu Mati"
+    } else if (saklar == 1) {
+        akhir = "Lampu Menyala"
+    }
+
+    console.log (akhir)
+  </script>
+</body>
+</html>

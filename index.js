@@ -184,7 +184,7 @@ if (lembur < 6) {
 }
 
 // NO 6 
-let air = 500.0;
+let air = 650;
 let status1 = "Aman";
 let status2 = "Waspada";
 let status3 = "Siaga 2";
@@ -195,7 +195,7 @@ if (air <= 500.0 ) {
 } else if (air <= 600.0) {
     console.log(`Tinggi air ${air} Meter, Status ${status2}`)
 } else if (air <= 650.0) {
-    console.log(`Tinggi air ${air} Meter, Status ${satus3}`)
-} else {
+    console.log(`Tinggi air ${air} Meter, Status ${status3}`)
+} else if (air >=650.1) {
     console.log(`Tinggi air ${air} Meter, Status ${status4}`)
 }

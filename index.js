@@ -77,3 +77,39 @@ else {
 
 console.log("Nilai Rata-Rata adalah " + rata2)
 console.log("Maka ditetapkan di kelas " + grade)
+
+// 1. Konversi Jam ke Detik
+    let Jam = 3;
+    
+    let Detik = Jam * 3600;
+
+    console.log(Detik)
+
+    // 2. Konversi Jam ke Menit
+    let jam = 2;
+
+    let Menit = jam * 60;
+
+    console.log(Menit)
+
+    // 3. Konversi KM ke M
+    let KM = 4;
+
+    let M = KM * 1000;
+
+    console.log(M)
+
+    // 4. Konversi KG ke G
+    let KG = 15;
+
+    let G = KG * 1000;
+
+    console.log(G)
+
+    // 5. Penjumlahan 2 Angka 
+    let Bil1 = 30;
+    let Bil2 = 25;
+
+    let Jumlah = Bil1 + Bil2;
+
+    console.log(Jumlah)

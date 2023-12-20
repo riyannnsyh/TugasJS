@@ -79,37 +79,123 @@ console.log("Nilai Rata-Rata adalah " + rata2)
 console.log("Maka ditetapkan di kelas " + grade)
 
 // 1. Konversi Jam ke Detik
-    let Jam = 3;
+let Jam = 3; 
+  
+let Detik = Jam * 3600;
+
+console.log(`${Detik} Detik`)
+
+// 2. Konversi Jam ke Menit
+let jam = 2;
+
+let Menit = jam * 60;
+
+console.log(`${Menit} Menit`)
+
+// 3. Konversi KM ke M
+let KM = 4;
+
+let M = KM * 1000;
+
+console.log(`${M} Meter`)
+
+// 4. Konversi KG ke G
+let KG = 15;
+
+let G = KG * 1000;
+
+console.log(`${G} Gram`)
+
+// 5. Penjumlahan 2 Angka 
+let Bil1 = 30;
+let Bil2 = 25;
+
+let Jumlah = Bil1 + Bil2;
+
+console.log(`Jadi hasilnya adalah ${Jumlah}`)
+
+// selection atau percabangan
+// NO 1
+let a = 1;
+let b = 2;
+let c = 3;
     
-    let Detik = Jam * 3600;
+if (a>b && a>c) {
+    console.log("bilangan satu paling besar")
+} else if (b>a && b>c) {
+    console.log("bilangan dua paling besar")
+} else if (c>a && c>b) {
+    console.log("bilangan tiga paling besar")
+}
 
-    console.log(Detik)
+// NO 2
+let angka = 0;
 
-    // 2. Konversi Jam ke Menit
-    let jam = 2;
+if (angka >= 0) {
+    hasil1 = "Positif"
+} else {
+    hasil1 = "Negatif"
+}
 
-    let Menit = jam * 60;
+if (angka %2 == 0) {
+    hasil2 = "Genap"
+} else {
+    hasil2 = "Ganjil"
+}
 
-    console.log(Menit)
+console.log(`Hasilnya adalah bilangan ${hasil1} dan bilangan ${hasil2}`)
 
-    // 3. Konversi KM ke M
-    let KM = 4;
+// NO 3
+let saklar = 0;
 
-    let M = KM * 1000;
+if (saklar == 0) {
+    akhir = "Lampu Mati"
+} else if (saklar == 1) {
+    akhir = "Lampu Menyala"
+}
 
-    console.log(M)
+// NO 4
+let barang1 = 45000;
+let barang2 = 45000;
+let barang3 = 15000;
 
-    // 4. Konversi KG ke G
-    let KG = 15;
+let harga = barang1 + barang2 + barang3;
+let diskon = 10/100 * harga;
+let total = harga - diskon;
 
-    let G = KG * 1000;
+if (harga >= 100000) {
+    console.log(`Total ${harga} karena pelanggan belanja lebih dari 100000 maka mendapat diskon 10% dan harus membayar ${total}`)
+} else if (harga < 100000) {
+    console.log(`Pelanggan tidak mendapat diskon dan harus membayar ${harga}`)
+}
 
-    console.log(G)
+// NO 5
+let lembur = 7;
+let gaji1 = 100000;
+let gaji2 = 200000;
+let gaji3 = 300000;
 
-    // 5. Penjumlahan 2 Angka 
-    let Bil1 = 30;
-    let Bil2 = 25;
+if (lembur < 6) {
+    console.log(`Gaji lembur yang didapat adalah ${gaji1}`)
+} else if (lembur == 6) {
+    console.log(`Gaji lembur yang didapat adalah ${gaji2}`)
+} else {
+    console.log(`Gaji lembur yang didapat adalah ${gaji3}`)
+}
 
-    let Jumlah = Bil1 + Bil2;
+// NO 6 
+let air = 500.0;
+let status1 = "Aman";
+let status2 = "Waspada";
+let status3 = "Siaga 2";
+let status4 = "Siaga 1";
 
-    console.log(Jumlah)
+if (air <= 500.0 ) {
+    console.log(`Tinggi air ${air} Meter, Status ${status1}`)
+} else if (air <= 600.0) {
+    console.log(`Tinggi air ${air} Meter, Status ${status2}`)
+} else if (air <= 650.0) {
+    console.log(`Tinggi air ${air} Meter, Status ${satus3}`)
+} else {
+    console.log(`Tinggi air ${air} Meter, Status ${status4}`)
+}

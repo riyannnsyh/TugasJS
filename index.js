@@ -199,3 +199,32 @@ if (air <= 500.0 ) {
 } else if (air >=650.1) {
     console.log(`Tinggi air ${air} Meter, Status ${status4}`)
 }
+
+// Menghitung Gaji
+let nama = "ucup";
+let gaji_pokok = 5500000;
+
+let tunj = 20/100 * gaji_pokok;
+let pjk = 15/100 * (gaji_pokok + tunj);
+let gaji_bersih = gaji_pokok + tunj - pjk;
+
+console.log(`Gaji pokok yang didapatkan ${nama} sebesar ${gaji_pokok}, tunjangannya sebesar 20% atau ${tunj}, pajak dari pendapatannya sebesar 15% ${pjk}. Maka gaji bersih yang didapatkan ${nama} sebesar ${gaji_bersih}`)
+
+// Konversi Jam-Detik-Menit ke Detik
+let j = 2;
+let m = 30;
+let d = 50;
+
+let total_detik = j * 3600 + m * 60 + d;
+
+console.log(`total ${total_detik} detik`)
+
+// Konversi Detik ke Jam-Menit-Detik
+let v = 3800;
+
+let w = Math.floor (v/3600);
+let x = v % 3600;
+let y = Math.floor (x/60);
+let z = x % 60;
+
+console.log(`${w} Jam ${y} Menit ${z} Detik`)
